@@ -23,8 +23,8 @@ public class Mandelbrot {
                 
                 int iteration = 0;
                 while (x * x + y * y < 4 && iteration < iterationMaximum) {
-                    double newX = x * x - y * y + cReal;
-                    y = 2 * x * y + cImaginary;
+                    double newX = x * x - y * y -.8;
+                    y = 2 * x * y + .156;
                     x = newX;
                     iteration++;
                 }
