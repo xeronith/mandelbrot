@@ -19,7 +19,7 @@ public class Mandelbrot {
             for (int column = 0; column < width; column++) {
                 double cReal = (column - width / 2) * 4.0 / width;
                 double cImaginary = (row - height / 2) * 4.0 / width;
-                double x = cReal, y = cImaginary;
+                double x = 0, y = 0;
                 
                 int iteration = 0;
                 while (x * x + y * y < 4 && iteration < iterationMaximum) {
